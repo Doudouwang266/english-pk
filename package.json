@@ -1,0 +1,15 @@
+{
+  "name": "english-pk",
+  "private": true,
+  "scripts": {
+    "dev:client": "pnpm --filter @english-pk/client dev",
+    "dev:server": "pnpm --filter @english-pk/server dev",
+    "dev": "pnpm run dev:server & pnpm run dev:client",
+    "build:client": "pnpm --filter @english-pk/client build",
+    "build:server": "pnpm --filter @english-pk/server build",
+    "build": "pnpm run build:server && pnpm run build:client"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
